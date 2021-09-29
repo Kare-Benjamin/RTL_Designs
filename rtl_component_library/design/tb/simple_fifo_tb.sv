@@ -41,15 +41,38 @@ module FIFO_tb;
         #10; rst = 0; write_enable = 1; read_enable = 0; 
         data_in = 8'b00110011;
         #10; rst = 0; write_enable = 1; read_enable = 0; 
-        data_in = 8'b00001111;
+        data_in = 8'b10001111;
+      	#10; rst = 0; write_enable = 1; read_enable = 0; 
+        data_in = 8'b01001100;
+        #10; rst = 0; write_enable = 1; read_enable = 0; 
+        data_in = 8'b01110011;
+        #10; rst = 0; write_enable = 1; read_enable = 0; 
+        data_in = 8'b01001111;
+        #10; rst = 0; write_enable = 1; read_enable = 0; 
+        data_in = 8'b00010011;
+      	/*
+        #10; rst = 0; write_enable = 1; read_enable = 0; 
+        data_in = 8'b00011111;
+        */
 
-         /* Read from FIFO */
+        /* Read from FIFO */
         #10; rst = 0; write_enable = 0; read_enable = 1; 
         data_in = 8'b11111111;
         #10; rst = 0; write_enable = 0; read_enable = 1; 
         data_in = 8'b11111111;
         #10; rst = 0; write_enable = 0; read_enable = 1; 
         data_in = 8'b11111111;
+        #10; rst = 0; write_enable = 0; read_enable = 1; 
+        data_in = 8'b11111111;
+        #10; rst = 0; write_enable = 0; read_enable = 1; 
+        data_in = 8'b11111111;
+        #10; rst = 0; write_enable = 0; read_enable = 1; 
+        data_in = 8'b11111111;
+        #10; rst = 0; write_enable = 0; read_enable = 1; 
+        data_in = 8'b11111111;
+        #10; rst = 0; write_enable = 0; read_enable = 1; 
+        data_in = 8'b11111111;
+
 
         /* Simulation complete */
         #10;
