@@ -1,2 +1,2 @@
 # RTL_Designs
-Experimental for the sake of education
+Contains a few simple RTL modules (one at the time being) that I use for practicing with verification/simulation. 
